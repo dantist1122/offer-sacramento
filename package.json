@@ -6,6 +6,10 @@
   "scripts": {
     "test": "wdio wdio.conf.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dantist1122/offer-sacramento.git"
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {

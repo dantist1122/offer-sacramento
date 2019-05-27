@@ -21,4 +21,59 @@ describe('Header', function(){
       console.log(headerWidth);
       assert.equal(headerWidth, '1012px', 'Header width is not 1012px')
    });
+
+   it('Verify logo', function(){
+      let elem = $('div.logo a img')
+      let logo = $('div.logo')
+      let imgSource = elem.getAttribute('src');
+      let position;
+      console.log(imgSource);
+      if(imgSource === 'https://www.healthearizonaplus.gov/Default/images/health-e-arizona-plus-logo.png'){
+         position = logo.getCssProperty('position').value;
+      }
+      let dis = elem.getCssProperty('display').value;
+      console.log(dis);
+      assert.equal(position, 'absolute', 'logo is not on the left')
+   });
+
+   it('verify first Right rows in header', function(){
+      let elem = $('div.header-wrapper');
+      let firstRow = elem.$$('div.header-menu')[0].$('ul').getCssProperty('float').value;
+      console.log(firstRow);
+      assert.equal(firstRow, 'right', 'element is not on the right')
+   });
+
+   it('Verify second right row in header', function(){
+      let elem = $('div.header-wrapper');
+      let secondRow = elem.$$('div.header-menu')[1].$('ul').getCssProperty('float').value;
+      console.log(secondRow);
+      assert.equal(secondRow, 'right', 'element is not on the right')
+   });
+
+   it('Verify first row content', function(){
+      let elem = $('div.header-wrapper');
+      let arr = [];
+      //let rowContent = elem.$$('div.header-menu')[0].$$('ul li a')[0].getText();
+      for(let i = 0; i<elem.$$('div.header-menu')[0].$$('ul li a').length; i++){
+         arr.push(elem.$$('div.header-menu')[0].$$('ul li a')[i].getText());
+      }
+      console.log(arr);
+      assert.equal(arr.join(', '), 'Create Account, Returning User Log In, Help, FAQs', 'content is different')
+   });
+
+   it('verify spanish version first row content', function(){
+       let spanishLanguageButton = $('#lnk_Spanish');
+       spanishLanguageButton.click();
+       browser.pause(5000);
+      let elem = $('div.header-wrapper');
+      let arr = [];
+      //let rowContent = elem.$$('div.header-menu')[0].$$('ul li a')[0].getText();
+      for(let i = 0; i<elem.$$('div.header-menu')[0].$$('ul li a').length; i++){
+         arr.push(elem.$$('div.header-menu')[0].$$('ul li a')[i].getText());
+      }
+      console.log(arr);
+      assert.equal(arr.join(', '), 'Crear una cuenta, Inicio de la sesión del usuario, Ayuda, FAQs', 'content is different')
+   });
+
+
 });

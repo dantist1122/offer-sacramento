@@ -1,5 +1,6 @@
 const {assert} = require('chai');
 
+
 describe('Page opening', function () {
     it('get title', function(){
         browser.url('/');

@@ -1,0 +1,10 @@
+{
+  "header": {
+    "logo": ".logo a img",
+    "CreateAccountLink": "#lnk_CreateAccountLnk"
+  },
+  "Individual/FamilyGetStarted": {
+    "image": "#img_banner"
+    
+  }
+}

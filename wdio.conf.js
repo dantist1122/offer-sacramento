@@ -12,7 +12,9 @@ exports.config = {
     specs: [
         //'./test/client-requirements.js',
         //'./test/home-page-sections.js',
-        './test/header.js'
+        //'./test/header/general.js',
+        //'./test/header/logo.js',
+        './test/header/links.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -66,7 +68,7 @@ exports.config = {
     coloredLogs: true,
     //
     // Warns when a deprecated command is used
-    deprecationWarnings: true,
+    deprecationWarnings: false,
     //
     // If you only want to run your tests until a specific amount of tests have failed use
     // bail (default is 0 - don't bail, run all tests).
@@ -82,7 +84,7 @@ exports.config = {
     baseUrl: 'https://www.healthearizonaplus.gov/',
     //
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 10000,
+    waitforTimeout: 20000,
     //
     // Default timeout in milliseconds for request
     // if Selenium Grid doesn't send response
@@ -98,22 +100,17 @@ exports.config = {
     // WebdriverCSS: https://github.com/webdriverio/webdrivercss
     // WebdriverRTC: https://github.com/webdriverio/webdriverrtc
     // Browserevent: https://github.com/webdriverio/browserevent
-    // plugins: {
-    //     webdrivercss: {
-    //         screenshotRoot: 'my-shots',
-    //         failedComparisonsRoot: 'diffs',
-    //         misMatchTolerance: 0.05,
-    //         screenWidth: [320,480,640,1024]
-    //     },
-    //     webdriverrtc: {},
-    //     browserevent: {}
-    // },
+     plugins: {
+         'wdio-element-screenshot': {}
+
+     },
     //
     // Test runner services
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
     services: ['selenium-standalone'],
+
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
     // see also: http://webdriver.io/guide/testrunner/frameworks.html

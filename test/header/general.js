@@ -64,7 +64,7 @@ describe('Header', function(){
    it('verify spanish version first row content', function(){
        let spanishLanguageButton = $('#lnk_Spanish');
        spanishLanguageButton.click();
-       browser.pause(5000);
+       //browser.pause(5000);
       let elem = $('div.header-wrapper');
       let arr = [];
       //let rowContent = elem.$$('div.header-menu')[0].$$('ul li a')[0].getText();
@@ -75,5 +75,38 @@ describe('Header', function(){
       assert.equal(arr.join(', '), 'Crear una cuenta, Inicio de la sesión del usuario, Ayuda, FAQs', 'content is different')
    });
 
+   it('Verify that Links are aligned vertically and separated by a pipe separator', function(){
+      let backToEnglish = $('#lnk_English');
+      backToEnglish.click();
+      //browser.pause(3000);
+      let elem = $('div.header-menu ul li');
+      let propertyFloat = elem.getCssProperty('float').value;
+      let propertyBorder = elem.getCssProperty('border-right').value;
+      console.log(propertyFloat, propertyBorder);
+      assert.equal(propertyFloat+" "+propertyBorder, 'left 1px solid rgb(255, 255, 255)', 'there is no separator')
+   });
 
+   it('Verify that Second row includes “English”|“Español” toggle in English version', function(){
+      let elem = $('div.header-wrapper');
+      let arr = [];
+      //let rowContent = elem.$$('div.header-menu')[0].$$('ul li a')[0].getText();
+      for(let i = 0; i<elem.$$('div.header-menu')[1].$$('ul li a').length; i++){
+         arr.push(elem.$$('div.header-menu')[1].$$('ul li a')[i].getText());
+      }
+      console.log(arr);
+      assert.equal(arr.join(', '), 'English, Español', 'Content is different')
+   });
+
+   it('Verify that second row includes “Inglés”|“Español” toggle in Spanish version', function(){
+      let spanishLanguageButton = $('#lnk_Spanish');
+      spanishLanguageButton.click();
+      let elem = $('div.header-wrapper');
+      let arr = [];
+      //let rowContent = elem.$$('div.header-menu')[0].$$('ul li a')[0].getText();
+      for(let i = 0; i<elem.$$('div.header-menu')[1].$$('ul li a').length; i++){
+         arr.push(elem.$$('div.header-menu')[1].$$('ul li a')[i].getText());
+      }
+      console.log(arr);
+      assert.equal(arr.join(', '), 'Inglés, Español', 'Content are not tha same')
+   });
 });

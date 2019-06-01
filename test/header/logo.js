@@ -1,6 +1,6 @@
 const { assert } = require('chai');
-const expected = require("./../../test-data/expected").logo;
-const selector = require ('./../../test-data/selectors').header;
+const expected = require("./../../test-data/expected").headerEng.logo;
+const selector = require ('./../../test-data/selectors').headerEng;
 
 describe('logo', function(){
    // it('verify logo', function(){

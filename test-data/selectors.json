@@ -1,7 +1,14 @@
 {
-  "header": {
+  "headerEng": {
     "logo": ".logo a img",
-    "CreateAccountLink": "#lnk_CreateAccountLnk"
+    "links": {
+      "CreateAccountLink": "#lnk_CreateAccountLnk",
+      "ReturningUserLogIn": "#lnk_ReturningUserLogIn",
+      "Help": "#lnk_Help",
+      "FAQs": "#lnk_faqs",
+      "English": "#lnk_English",
+      "Español": "#lnk_Spanish"
+    }
   },
   "Individual/FamilyGetStarted": {
     "image": "#img_banner"

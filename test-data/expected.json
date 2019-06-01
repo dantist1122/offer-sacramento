@@ -1,7 +1,29 @@
 {
-  "logo": {
-          "width": "245px",
-          "height": "106px",
-          "source": "https://www.healthearizonaplus.gov/Default/images/health-e-arizona-plus-logo.png"
+  "headerEng": {
+    "logo": {
+      "width": "245px",
+      "height": "106px",
+      "source": "https://www.healthearizonaplus.gov/Default/images/health-e-arizona-plus-logo.png"
+    },
+    "links": {
+      "design": {
+        "fontColor": "#ffffff",
+        "fontFamily": "arial, helvetica, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "textDecorationLine": "underline",
+        "outlineColor": "rgba(77,144,254,1)",
+        "outlineWidth": "4.8px"
+      },
+      "functionality": {
+        "CreateAccount": "https://www.healthearizonaplus.gov/App/Admin_User_agreement.aspx?new_user=1",
+        "ReturningUserLogIn” link is clicked": "'My Account Sign In' pop-up",
+        "Help": "Help",
+        "FAQs": "FAQs",
+        "HomePageIsInEnglish": "Create Account",
+        "EspañolAlwaysEspañol": "Español",
+        "PageIsInSpanish": "Crear una cuenta"
+      }
+    }
   }
 }

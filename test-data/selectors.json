@@ -1,5 +1,6 @@
 {
   "headerEng": {
+    "headerContainer": ".header-container",
     "logo": ".logo a img",
     "links": {
       "CreateAccountLink": "#lnk_CreateAccountLnk",
@@ -10,8 +11,13 @@
       "Español": "#lnk_Spanish"
     }
   },
-  "Individual/FamilyGetStarted": {
-    "image": "#img_banner"
+  "IndividualAndFamilyGetStartedEng": {
+    "mainContainer": ".banner",
+    "TableForTwoCells": "div.banner > table > tbody > tr",
+    "leftCellImage": "#img_banner",
+    "rightCellTitle": "#lbl_Banner_Text_one",
+    "rightCellText": "#lbl_Banner_Text_two",
+    "rightCellImage": "#img_GetStart"
     
   }
 }

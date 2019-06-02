@@ -55,5 +55,11 @@
       "imageSrc": "https://www.healthearizonaplus.gov/Default/images/get_started.png",
       "directionUrlVerification": "Individual & Family"
     }
+  },
+  "OtherOptionsGetStarted": {
+    "general": {
+      "location": "located between ’Individual/Family Get started’ section and ’Questions’ section",
+      "width": "998px"
+    }
   }
 }

@@ -18,6 +18,11 @@
     "rightCellTitle": "#lbl_Banner_Text_one",
     "rightCellText": "#lbl_Banner_Text_two",
     "rightCellImage": "#img_GetStart"
-    
+  },
+  "OtherOptionsGetStarted": {
+    "mainContainer": ".section-panel"
+  },
+  "QuestionsSection": {
+    "mainContainer": ".section-panel1"
   }
 }

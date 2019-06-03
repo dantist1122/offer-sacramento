@@ -59,7 +59,52 @@
   "OtherOptionsGetStarted": {
     "general": {
       "location": "located between ’Individual/Family Get started’ section and ’Questions’ section",
-      "width": "998px"
+      "width": "998px",
+      "paddingTopAndBottom": "18px",
+      "paddingRightAndLeft": "24px",
+      "backgroundColor": "#f7f7f7",
+      "borderBottomWidth": "1px",
+      "borderBottomStyle": "solid",
+      "borderBottomColor": "#e2e2e2"
+    },
+    "IndividualAndFamily": {
+      "general": {
+        "width": "300px",
+        "paddingRight": "25px"
+      },
+      "image": {
+        "source": "https://www.healthearizonaplus.gov/Default/images/Individual_and_family_a.jpg",
+        "size": "300*180px",
+        "border": "1px solid rgb(192, 192, 192)"
+      },
+      "title": {
+        "content": "INDIVIDUAL AND FAMILY",
+        "float": "left",
+        "fontSize": "27px",
+        "fontWeight": "700",
+        "fontFamily": "calibri",
+        "color": "#ff6802",
+        "textTransform": "uppercase"
+      },
+      "description": {
+        "content": "Connecting individuals and families to coverage, benefits and services.",
+        "fontWeight": "400",
+        "fontFamily": "arial, helvetica, sans-serif",
+        "fontSize": "12px",
+        "color": "#494a4b"
+      },
+      "link": {
+        "content": "GET STARTED",
+        "redirectUrl": "https://www.healthearizonaplus.gov/app/Info_Family_Individual.aspx",
+        "fontWeight": "700",
+        "fontFamily": "calibri",
+        "fontSize": "14px",
+        "color": "#0869cc",
+        "textTransform": "uppercase",
+        "textDecorationHover": "underline",
+        "outlineColor": "rgba(77,144,254,1)",
+        "outlineWidth": "4.8px"
+      }
     }
   }
 }

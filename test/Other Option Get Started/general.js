@@ -40,12 +40,53 @@ describe("General", function(){
 
    it('Verify padding top and bottom', function(){
       let elem = $(selectors.OtherOptionsGetStarted.mainContainer);
-      let paddingTop = elem.getCssProperty('padding-top').parsed.value;
-      let paddingBottom = elem.getCssProperty('padding-bottom').parsed.value;
+      let paddingTop = elem.getCssProperty('padding-top').value;
+      let paddingBottom = elem.getCssProperty('padding-bottom').value;
       let padding;
       if(paddingTop === paddingBottom){
          padding = paddingTop ;
       }
       console.log(padding);
+      assert.equal(padding, expeceted.OtherOptionsGetStarted.general.paddingTopAndBottom, 'padding top and bottom is different');
+   });
+
+   it('Verify padding right and left', function () {
+      let elem = $(selectors.OtherOptionsGetStarted.mainContainer);
+      let paddingRight = elem.getCssProperty('padding-right').value;
+      let paddingLeft = elem.getCssProperty('padding-left').value;
+      let padding;
+      if(paddingRight === paddingLeft){
+         padding = paddingLeft;
+      }
+      console.log(padding);
+      assert.equal(padding, expeceted.OtherOptionsGetStarted.general.paddingRightAndLeft, 'padding right and left are different');
+   });
+
+   it('Verify background color', function () {
+      let elem = $(selectors.OtherOptionsGetStarted.mainContainer);
+      let color = elem.getCssProperty('background-color').parsed.hex;
+      console.log(color);
+      assert.equal(color, expeceted.OtherOptionsGetStarted.general.backgroundColor, 'background color is different');
+   });
+
+   it('Verify border bottom', function () {
+      let elem = $(selectors.OtherOptionsGetStarted.mainContainer);
+      let borderBottom = elem.getCssProperty('border-bottom-width').value;
+      console.log(borderBottom);
+      assert.equal(borderBottom, expeceted.OtherOptionsGetStarted.general.borderBottomWidth, "border bottom is different");
+   });
+
+   it('Verify border bottom style', function () {
+      let elem = $(selectors.OtherOptionsGetStarted.mainContainer);
+      let borderStyle = elem.getCssProperty('border-bottom-style').value;
+      console.log(borderStyle);
+      assert.equal(borderStyle, expeceted.OtherOptionsGetStarted.general.borderBottomStyle, "border style is different");
+   });
+
+   it('Verify border bottom color',function () {
+      let elem = $(selectors.OtherOptionsGetStarted.mainContainer);
+      let borderColor = elem.getCssProperty('border-bottom-color').parsed.hex;
+      console.log(borderColor);
+      assert.equal(borderColor, expeceted.OtherOptionsGetStarted.general.borderBottomColor, "border color is different");
    });
 });

@@ -20,8 +20,34 @@
     "rightCellImage": "#img_GetStart"
   },
   "OtherOptionsGetStarted": {
-    "mainContainer": ".section-panel"
+    "mainContainer": ".section-panel",
+    "Containers": {
+      "right": ".section1",
+      "middle": ".section2",
+      "left": ".section3"
+    },
+    "Images": {
+      "right": ".thum_img_border",
+      "middle": "div.section2 img",
+      "left": "div.section3 img"
+    },
+    "title": {
+      "right": "#Individual",
+      "middle": "#StateWorker",
+      "left": "#Community_Assitor"
+    },
+    "Descriptions": {
+      "right": "#lbl_Connecting",
+      "middle": "#lbl_AHCCCS",
+      "left": "#lbl_TrainedAssitors"
+    },
+    "Links": {
+      "right": "#lnk_GetStarted",
+      "middle": "#lnk_StateWorker_GetStarted",
+      "left": "#lnk_CommunityAssitor_GetStarted"
+    }
   },
+
   "QuestionsSection": {
     "mainContainer": ".section-panel1"
   }

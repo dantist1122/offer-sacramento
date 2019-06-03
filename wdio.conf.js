@@ -10,17 +10,18 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        // './test/client-requirements.js',
-        // './test/home-page-sections.js',
-        // './test/header/general.js',
-        // './test/header/logo.js',
-        // './test/header/links.js',
-        // './test/header/functionality.js',
-        // './test/Individual and Family Get started/general.js',
-        // './test/Individual and Family Get started/title.js',
-        // './test/Individual and Family Get started/text.js',
-        // './test/Individual and Family Get started/button.js',
-        './test/Other Option Get Started/general.js'
+        './test/client-requirements.js',
+        './test/home-page-sections.js',
+        './test/header/general.js',
+        './test/header/logo.js',
+        './test/header/links.js',
+        './test/header/functionality.js',
+        './test/Individual and Family Get started/general.js',
+        './test/Individual and Family Get started/title.js',
+        './test/Individual and Family Get started/text.js',
+        './test/Individual and Family Get started/button.js',
+        './test/Other Option Get Started/general.js',
+        './test/Other Option Get Started/IndividualAndFamily.js'
     ],
     // Patterns to exclude.
     exclude: [

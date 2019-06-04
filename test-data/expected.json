@@ -156,6 +156,24 @@
       "fontWeight": "400",
       "textColor": "#494a4b",
       "linkColor": "#0869cc"
+    },
+    "section1": {
+      "headerText": "Do you",
+      "linkText": "Want to See\nif Someone Might Qualify\nfor Coverage or Benefits?",
+      "linkRedirectTo": "https://www.healthearizonaplus.gov/App/Scr_Quick.aspx?action=new"
+    },
+    "section2": {
+      "headerText": "Do you have",
+      "link1Text": "Additional Questions?",
+      "link2Text": "Questions on Your Information at CMS?",
+      "link1RedirectTo": "Help",
+      "link2RedirectTo": "https://www.cms.gov/"
+    },
+    "section3": {
+      "headerText": "What is",
+      "linkText": "Health-e-Arizona PLUS?",
+      "linkRedirectTo": "Details",
+      "DescriptionContent": "Testimonials provided by the persons who have used Health-e-Arizona PLUS to obtain and manage their coverage."
     }
   }
 }

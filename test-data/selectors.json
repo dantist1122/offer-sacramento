@@ -49,6 +49,23 @@
   },
 
   "QuestionsSection": {
-    "mainContainer": ".section-panel1"
+    "mainContainer": ".section-panel1",
+    "containers": {
+      "left": ".section5",
+      "middle": ".section6",
+      "right": ".section7"
+    },
+    "header": {
+      "left": "#Are_You_1",
+      "middle": "#Do_You",
+      "right": "#What_Is"
+    },
+    "question":{
+      "left": "#lnk_ClickToGet",
+      "middle1": "#lnk_ClickHereIf",
+      "middle2": "#lnk_cms",
+      "right": "#lnk_HEAplus"
+    },
+    "descriptionRight": "#lbl_Testimonials"
   }
 }

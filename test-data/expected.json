@@ -105,6 +105,57 @@
         "outlineColor": "rgba(77,144,254,1)",
         "outlineWidth": "4.8px"
       }
+    },
+    "stateWorker": {
+      "general": {
+        "width": "300px",
+        "paddingRight": "25px"
+      },
+      "image": {
+        "source": "https://www.healthearizonaplus.gov/Default/images/State_Worker_a.jpg"
+      },
+      "title": {
+        "content": "STATE WORKER"
+      },
+      "description": {
+        "content": "AHCCCS and DES Staff Helping Arizonans Get Coverage, Benefits and Services."
+      },
+      "link": {
+        "redirectUrl": "https://www.healthearizonaplus.gov/app/Login.aspx"
+    }
+  },
+    "communityAssistor": {
+      "general": {
+        "width": "300px"
+      },
+      "image": {
+        "source": "https://www.healthearizonaplus.gov/Default/images/Community_Assistor_a.jpg"
+      },
+      "title": {
+        "content": "COMMUNITY ASSISTOR"
+      },
+      "description": {
+        "content": "Trained Community Partners that Help Individuals and Families Connect to Coverage, Benefits and Services."
+      },
+      "link": {
+        "redirectUrl": "https://www.healthearizonaplus.gov/app/Info_Assistor.aspx"
+      }
+    }
+},
+  "questionSection": {
+    "general": {
+      "location": "under other option section",
+      "width": "950px",
+      "display": "block",
+      "float": "left",
+      "borderWidth": "0px",
+      "textDecorationHover": "underline",
+      "afterClickTExtDecoration": "none",
+      "textSize": "12px",
+      "fontFamily": "arial, helvetica, sans-serif",
+      "fontWeight": "400",
+      "textColor": "#494a4b",
+      "linkColor": "#0869cc"
     }
   }
 }

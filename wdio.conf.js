@@ -21,7 +21,10 @@ exports.config = {
         // './test/Individual and Family Get started/text.js',
         // './test/Individual and Family Get started/button.js',
         // './test/Other Option Get Started/general.js',
-        './test/Other Option Get Started/IndividualAndFamily.js'
+        // './test/Other Option Get Started/IndividualAndFamily.js',
+        // './test/Other Option Get Started/stateWorker.js',
+        // './test/Other Option Get Started/communityAssistor.js',
+        './test/QuestionSection/general.js'
     ],
     // Patterns to exclude.
     exclude: [

@@ -45,3 +45,4 @@ describe('warning', function () {
         assert.equal(width, expected.warning.width);
     });
 });
+

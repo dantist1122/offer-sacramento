@@ -27,7 +27,10 @@ exports.config = {
         './test/QuestionSection/general.js',
         './test/QuestionSection/section1.js',
         './test/QuestionSection/section2.js',
-        './test/QuestionSection/section3.js'
+        './test/QuestionSection/section3.js',
+        './test/languages/general.js',
+        './test/languages/functionality.js',
+        './test/warning/general.js'
     ],
     // Patterns to exclude.
     exclude: [

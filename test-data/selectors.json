@@ -67,5 +67,35 @@
       "right": "#lnk_HEAplus"
     },
     "descriptionRight": "#lbl_Testimonials"
+  },
+  "languages": {
+    "general": {
+      "mainContainer": "div.header-menu > div.announcement",
+      "header": "#Lbl_Other_Languages",
+      "listOfLanguages": "#container"
+    },
+    "languages": {
+      "spanish": "#Hlnk_Spanish",
+      "navajo": "#Hlnk_Navajo",
+      "chinese": "#Hlnk_Chinese",
+      "vietnamese": "#Hlnk_Vietnamese",
+      "arabic": "#Hlnk_Arabic",
+      "tagalog": "#Hlnk_Tagalog",
+      "korean": "#Hlnk_Korean",
+      "french": "#Hlnk_French",
+      "german": "#Hlnk_German",
+      "russian": "#Hlnk_Russian",
+      "japanese": "#Hlnk_Japanese",
+      "persian/Farsi": "#Hlnk_Persian",
+      "syriac/Assyrian": "#HyperLink1",
+      "serbo-Croatian/Serbian": "#HyperLink2",
+      "thai": "#HyperLink3",
+      "italian": "#HyperLink4"
+    },
+    "boardWithInformation": "#Div_Other_Lang_Text"
+  },
+  "warning": {
+    "main": ".warningannouncement",
+    "text": "#lbl_login_msg"
   }
 }

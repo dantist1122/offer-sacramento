@@ -60,11 +60,11 @@ describe('Verify links functionality', function(){
 
     it('Verify that when user clicks “Español” link, all text elements (except in  “Languages section”) are translated into Spanish', function () {
        browser.url('/');
-       let elem = $(selectors.Español);
+       let elem = $(selectors.español);
        elem.click();
        let verificationAll = $(selectors.CreateAccountLink);
        let spanishContent = verificationAll.getText();
-       let verificationEsp = $(selectors.Español);
+       let verificationEsp = $(selectors.español);
        let remainEsp = verificationEsp.getText();
        console.log(spanishContent, remainEsp);
        assert.equal(spanishContent +' '+ remainEsp, expected.PageIsInSpanish +' '+ expected.EspañolAlwaysEspañol, "page translated")
@@ -72,7 +72,7 @@ describe('Verify links functionality', function(){
 
     it('Verify that when user clicks “Español” link in Spanish version, the language of the page remains Spanish', function () {
        browser.url('/');
-       let elem = $(selectors.Español);
+       let elem = $(selectors.español);
        elem.click();
        elem.click();
        let verification = $(selectors.CreateAccountLink);

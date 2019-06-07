@@ -64,7 +64,7 @@ exports.config = {
             maxInstances: 5,
             //
             browserName: 'chrome',
-            specs:['./test/QuestionSection/section3.js']
+            specs:['./test/spanishVersion/header.js']
         }],
     //
     // ===================
